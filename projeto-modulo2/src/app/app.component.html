@@ -1,1 +1,9 @@
-<input value="Nome: " type="text">
+<input value="Nome: " [type]="textInput" [disabled]="isDesabled">
+<br>
+<input type="button" (click)="enableInput()" value="Habilitar">
+<input type="button" (click)="disabledInput()" value="Desabilitar">
+<br>
+<input type="button" (click)="inputText()" value="Mostrar Caracteres">
+<input type="button" (click)="inputPassword()" value="Ocultar Caracteres">
+<br>
+<input type="button" (click)="toggleInput()" value="Mudar Visibilidade">
