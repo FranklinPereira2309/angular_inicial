@@ -12,6 +12,8 @@ export class AppComponent {
   textHabilitar='Habilitar';
   textDesabilitar='Desabilitar';
   buttonDisable = false;
+  isRedButton = true;
+  isGreenButton = true;
 
   enableInput() {
     this.isDesabled = false;
@@ -46,4 +48,13 @@ export class AppComponent {
   onButtonClick() {
     this.buttonDisable = !this.buttonDisable;
   }
+
+  getButtonGreen() {
+    this.isGreenButton = false;
+  }
+  getButtonRed() {
+    this.isGreenButton = true;
+   
+  }
+
 }

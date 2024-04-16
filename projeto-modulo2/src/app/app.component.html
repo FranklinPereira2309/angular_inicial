@@ -46,3 +46,26 @@
     Desabilitar
 </button>
 <button (click)="onButtonClick()">Clique para Desabilitar</button>
+<br>
+<br>
+<br>
+<br>
+<!-- <button [class.red-button]="true">Vermelho</button> -->
+<br>
+<button [class.red-button]="isRedButton" (click)="getButtonGreen()">Vermelho</button>
+<br>
+<br>
+<br>
+<button [class.green-button]="true" (click)="getButtonRed()">Green</button>
+<br>
+<br>
+<br>
+<button 
+    [class]="{
+        'red-button': !isGreenButton,
+        'green-button': isGreenButton
+    }"
+    >
+    Objeto
+</button>
+
