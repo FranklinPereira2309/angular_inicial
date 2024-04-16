@@ -9,6 +9,9 @@ export class AppComponent {
   title = 'projeto-modulo2';
   isDesabled = true;
   textInput = 'text'
+  textHabilitar='Habilitar';
+  textDesabilitar='Desabilitar';
+  buttonDisable = false;
 
   enableInput() {
     this.isDesabled = false;
@@ -18,7 +21,7 @@ export class AppComponent {
   }
 
   toggleInput() {
-    this.textInput;
+    this.isDesabled = !this.isDesabled;
   }
 
   inputText() {
@@ -27,5 +30,20 @@ export class AppComponent {
 
   inputPassword() {
     this.textInput = 'password';
+  }
+
+  handleInputKeyUp(event: KeyboardEvent) {
+    const currentText = (event.target as HTMLInputElement).value;
+    console.log(currentText);
+    
+  }
+  
+  handleInput(event: Event) {
+    const currentText = (event.target as HTMLInputElement).value;
+    console.log(currentText);
+    
+  }
+  onButtonClick() {
+    this.buttonDisable = !this.buttonDisable;
   }
 }

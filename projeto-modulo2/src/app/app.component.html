@@ -1,9 +1,48 @@
-<input value="Nome: " [type]="textInput" [disabled]="isDesabled">
+<input 
+    value="Nome: " 
+    [type]="textInput" 
+    [disabled]="isDesabled"
+    (keyup)="handleInputKeyUp($event)"
+    (input)="handleInput($event)"
+/>
 <br>
-<input type="button" (click)="enableInput()" value="Habilitar">
-<input type="button" (click)="disabledInput()" value="Desabilitar">
+<input 
+    type="button" 
+    (click)="enableInput()" 
+    value="Habilitar"  
+>
+
+
+<input 
+    type="button" 
+    (click)="disabledInput()" 
+    value="Desabilitar"
+>
+
 <br>
-<input type="button" (click)="inputText()" value="Mostrar Caracteres">
-<input type="button" (click)="inputPassword()" value="Ocultar Caracteres">
+<input 
+    type="button" 
+    (click)="inputText()"
+    value="Mostrar Caracteres"
+>
+<input 
+    type="button" 
+    (click)="inputPassword()" 
+    value="Ocultar Caracteres"
+    >
 <br>
-<input type="button" (click)="toggleInput()" value="Mudar Visibilidade">
+<input 
+    type="button" 
+    (click)="toggleInput()" 
+    value="Mudar Visibilidade"
+>
+<br>
+<button [attr.title]="textHabilitar">Habilitar</button>
+<br>
+<button 
+    [attr.title]="textDesabilitar"
+    [attr.disabled]="buttonDisable? true: null"
+    >
+    Desabilitar
+</button>
+<button (click)="onButtonClick()">Clique para Desabilitar</button>
