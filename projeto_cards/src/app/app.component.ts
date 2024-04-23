@@ -6,8 +6,14 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
+  
   handleClicked() {
     console.log('handleClicked');
+    
+  }
+
+  buttonClikedEmitter() {
+    console.log('buttonClikedEmitter');
     
   }
 }

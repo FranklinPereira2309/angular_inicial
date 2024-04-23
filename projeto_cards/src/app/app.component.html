@@ -1,2 +1,14 @@
-<app-button [text]="'Adquirir'" [style]="'white'" (clicked)="handleClicked()"></app-button>
-<app-button [text]="'Adquirir'" [style]="'purple'" [disabled]="true" ></app-button>
+<div class="cards-container">
+    <app-card 
+        [planType]="'Simples'" 
+        [planPrice]="100"
+        [cardStyle]="'orange'"
+        (onCardClicked)="buttonClikedEmitter()"
+        ></app-card>
+        <app-card 
+        [planType]="'Completo'" 
+        [planPrice]="250"
+        [cardStyle]="'purple'"
+        (onCardClicked)="buttonClikedEmitter()"
+    ></app-card>
+</div>

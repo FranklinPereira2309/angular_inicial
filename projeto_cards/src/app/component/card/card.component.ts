@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrl: './card.component.scss'
 })
 export class CardComponent {
+  @Input({required: true})
+  planType: string = '';
+  
+  @Input({required: true})
+  planPrice: number = 0;
 
+  @Input({required:true})
+  cardStyle: 'orange' | 'purple' = 'orange';
+
+  @Output('onCardClicked') buttonCardClicled = new EventEmitter<void>();
+
+  oncardButtonCliked() {
+    this.buttonCardClicled.emit();
+  }
 }
