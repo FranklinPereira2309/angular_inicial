@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'projeto_cards';
+  handleClicked() {
+    console.log('handleClicked');
+    
+  }
 }
