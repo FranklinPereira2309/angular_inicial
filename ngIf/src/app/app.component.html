@@ -1,8 +1,22 @@
 <!-- <div style="background-color: lightblue;" *ngIf="minhaProp">Sou uma Div!</div>
 <button (click)="toggle()">Toggle</button> -->
 
-<div style="background-color: lightblue;" *ngIf="true; else meuTemplate">Sou uma Div!</div>
+<!-- <div style="background-color: lightblue;" *ngIf="true; else meuTemplate">Sou uma Div!</div>
 
 <ng-template #meuTemplate> 
   <div style="background-color: lightgreen;" >Sou outra Div!</div>  
-</ng-template>
+</ng-template> -->
+
+<ng-container
+  *ngIf="minhaProp; then meuTemplate; else meuOutroTemplate"
+></ng-container>
+
+<ng-template #meuTemplate> 
+  <div style="background-color: lightgreen;" >Sou Div Then!</div>  
+</ng-template> 
+
+<ng-template #meuOutroTemplate> 
+  <div style="background-color: red;" >Sou Div Else!</div>  
+</ng-template> 
+
+<button (click)="toggle()">Toggle</button>
