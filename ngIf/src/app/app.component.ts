@@ -6,5 +6,25 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'ngIf';
+  minhaProp = true;
+  // pessoa = {
+  //   status: 1,
+  // }
+
+  toggle() {
+    this.minhaProp = !this.minhaProp;
+  }
+
+  isTruthy() {
+    //return {};
+    //return [];
+    //return true;
+    //return 1;
+    //return "teste";
+    //return 'teste';
+    //return "0";
+    //return "false";
+    //return this.pessoa.status;
+    
+  }
 }
