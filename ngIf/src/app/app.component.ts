@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   minhaProp = true;
   // pessoa = {
-  //   status: 1,
+  //  status: 1,
+  //  name: undefined  
   // }
 
   toggle() {
