@@ -12,11 +12,15 @@
 ></ng-container>
 
 <ng-template #meuTemplate> 
-  <div style="background-color: lightgreen;" >Sou Div Then!</div>  
+  <div style="background-color: lightgreen;" >Sou Div 'Then'!</div>  
 </ng-template> 
 
 <ng-template #meuOutroTemplate> 
-  <div style="background-color: red;" >Sou Div Else!</div>  
+  <div style="background-color: red;" >Sou Div 'Else'!</div>  
 </ng-template> 
 
 <button (click)="toggle()">Toggle</button>
+
+<!-- <div id="minha-div" style="display: none;">Sou uma div 'None'!!</div> -->
+<div id="minha-div" style="visibility: hidden;">Sou uma div 'Hidden'!!</div>
+<h1>Sou Hidden</h1>
