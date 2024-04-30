@@ -1,12 +1,12 @@
 .list {
     background-color: black;
+    border: 2px solid black;
     
 }
 
 .item {
     padding: 15px;
     background-color: beige;
-    border: 2ps solid black;
     
     &__name {
         font-size: 25px;
