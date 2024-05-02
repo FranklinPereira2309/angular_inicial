@@ -1,0 +1,13 @@
+<div 
+class="item"
+(click)="selectPerson()"
+[class.item--highlighted]="activeHighLight"
+
+>    
+    <p class="item__name">{{peopleIndex}} - {{peopleName}}</p>
+    <p class="item__age">{{peopleAge}} anos</p>
+    <p *ngIf="isEven">É Par</p>
+    <p *ngIf="isOdd">É Impar</p>
+    <p *ngIf="isLast">É o Último</p>
+    <p *ngIf="isFirst">É o Primeiro</p>    
+  </div>
