@@ -1,1 +1,23 @@
-<h1 [ngStyle]="{'font-size':'15px'}">Sou um H1</h1>
+<h1 
+[ngStyle]="{
+  'font-size':tamanhoTexto+'px',
+  'color': corTexto
+  
+  }"
+
+>Sou um H1 - 1</h1>
+
+<h1 
+[style.font-size.px]="tamanhoTexto"
+[style.color]="corTexto"
+
+>Sou um H1 - 2</h1>
+
+<h1 
+[style]="estiloObj"
+
+
+>Sou um H1 - 3</h1>
+
+<button (click)="trocarCorTexto()">{{textoExibido}}</button>
+<button (click)="incrementarFonte()">A+</button>
