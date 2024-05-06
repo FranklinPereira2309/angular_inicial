@@ -2,6 +2,7 @@
 class="item"
 (click)="selectPerson()"
 [class.item--highlighted]="activeHighLight"
+[class.item--odd]="isOdd"
 
 >    
     <p class="item__name">{{peopleIndex}} - {{peopleName}}</p>

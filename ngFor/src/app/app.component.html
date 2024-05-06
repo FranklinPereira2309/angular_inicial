@@ -7,21 +7,16 @@
     let isLast = last; 
     let isFirst = first 
 
-  "
-  
-  
-  >
-  <app-list
-    [name]="people.name"
-    [age]="people.age"
-    [index]="i"
-    [even]="isEven"
-    [odd]="isOdd"
-    [last]="isLast"
-    [first]="isFirst"
-    (emitPerson)="personIndex($event)"
-    [highLight]="personSelectedIndex === i"
-    
-  ></app-list>
+  ">
+    <app-list
+      [name]="people.name"
+      [age]="people.age"
+      [index]="i"
+      [even]="isEven"
+      [odd]="isOdd"
+      [last]="isLast"
+      [first]="isFirst"
+      (emitPerson)="personIndex($event)"
+      [highLight]="personSelectedIndex === i"></app-list>
 </div>
   

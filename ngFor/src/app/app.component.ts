@@ -9,10 +9,10 @@ export class AppComponent {
   personSelectedIndex: number = 0;
 
   listPeople = [
-    {name: 'Felipe Freitas', age: 26}, 
-    {name: 'Fulano da Silva', age: 34}, 
-    {name:'Jorginho Carvalho', age: 55}, 
-    {name:'Joãozinho da Silva', age: 18}
+    {name: 'Franklin Menezes', age: 26}, 
+    {name: 'Fulano de Menezes', age: 34}, 
+    {name:'Gabriel Pereira', age: 55}, 
+    {name:'Joãozinho da Menezes', age: 18}
   ];
  personIndex(index: number) {
   this.personSelectedIndex = index;  
