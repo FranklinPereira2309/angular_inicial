@@ -9,7 +9,7 @@ export class AppComponent {
   tamanhoTexto: number = 15;
   corTexto: 'white' | 'orange' = 'white' ;  
   textoExibido: 'Branco' | 'Laranja' = 'Laranja'
-  //estilosPersonalizados: string = 'font-size: 15px; color: white'
+  estilosPersonalizados: string = 'font-size: 15px; color: white'
   estiloObj = {
     'font-size': this.tamanhoTexto+'px',
     'color': this.corTexto
@@ -17,7 +17,7 @@ export class AppComponent {
 
   incrementarFonte() {
     this.tamanhoTexto += 5;
-    //this.estilosPersonalizados = `font-size: ${this.tamanhoTexto}px; color: ${this.corTexto}`
+    this.estilosPersonalizados = `font-size: ${this.tamanhoTexto}px; color: ${this.corTexto}`
     this.estiloObj = {
       'font-size':this.tamanhoTexto+'px',
       'color': this.corTexto
@@ -32,7 +32,7 @@ export class AppComponent {
       this.corTexto = 'white';
       this.textoExibido = 'Laranja';
     }
-    //this.estilosPersonalizados = `font-size: ${this.tamanhoTexto}px; color: ${this.corTexto}`
+    this.estilosPersonalizados = `font-size: ${this.tamanhoTexto}px; color: ${this.corTexto}`
     this.estiloObj = {
       'font-size':this.tamanhoTexto+'px',
       'color': this.corTexto
