@@ -6,6 +6,8 @@ import { Pipe, PipeTransform } from "@angular/core";
 
 export class StatusClassPipe implements PipeTransform {
     transform(status: number): string {
+        console.log('StatusClassPipe');
+        
         // if(status === 1) {
         //     return 'active';
         // }else if(status === 2) {
