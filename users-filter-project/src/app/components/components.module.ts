@@ -3,6 +3,7 @@ import { AngularMaterialModule } from "../angular-material/angular-material.modu
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { FilterComponent } from './filter/filter.component';
 import { FormsModule } from "@angular/forms";
+import { CommonModule } from "@angular/common";
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { FormsModule } from "@angular/forms";
   ],
   imports: [
     FormsModule,
-    AngularMaterialModule
+    AngularMaterialModule,
+    CommonModule
   ],
   exports: [
     UserDetailsComponent,
