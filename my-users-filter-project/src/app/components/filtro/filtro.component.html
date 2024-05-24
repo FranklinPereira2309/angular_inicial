@@ -1,0 +1,36 @@
+<div class="container-lista">
+    <div class="content-input">
+        <mat-form-field class="example-full-width">
+            <mat-label>Nome</mat-label>
+            <input matInput placeholder="Digite o Nome">
+        </mat-form-field>
+
+    </div>
+    <div class="content-date">
+        <mat-form-field>
+            <mat-label>Selecione o período</mat-label>
+            <mat-date-range-input [rangePicker]="picker">
+                <input matStartDate placeholder="Data Inicial">
+                <input matEndDate placeholder="Data Final">
+            </mat-date-range-input>
+            <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-date-range-picker #picker></mat-date-range-picker>
+        </mat-form-field>
+
+    </div>
+    <div class="content-status">
+        <mat-form-field>
+            <mat-label>Status</mat-label>
+            <mat-select>
+                <mat-option value="one">Ativo</mat-option>
+                <mat-option value="two">Inativo</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <div class="content-btn">
+        <button mat-flat-button color="primary">Filtrar</button>
+    </div>
+
+
+</div>

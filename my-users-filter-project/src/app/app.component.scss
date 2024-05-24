@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.esquerda {
+    width: 70%;
+    
+}
+.principal {
+    background-color: brown;
+    height: 80%;
+}
+.topo {
+    
+    height: 20%;
+    
+}
+
+.direita {
+    width: 30%;
+    padding: 20px;
+    background-color: blue;
+}
